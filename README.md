@@ -1,1 +1,1 @@
-![course-card](images/USD-card.png)
+![course-card](images/usd-card.png)
