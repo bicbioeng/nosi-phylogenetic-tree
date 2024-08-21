@@ -92,12 +92,12 @@ This submodule includes analyzing the phylogenetic tree for comparative metageno
 
 ## Data
 This training module will use 6 different datasets to cover the diversity of our problem for each of the use cases shown.
-UC1(Covid Epidemiology): --
-UC2(Protein Alignment): --
-UC3(Pan-genomics & Core Genome): --
-UC4(Cancer): --
-UC5(Ecology (NIF Bacteria)): --
-UC6(Protein - IFA - RNASeq): --
+- UC1(Covid Epidemiology): --
+- UC2(Protein Alignment): --
+- UC3(Pan-genomics & Core Genome): --
+- UC4(Cancer): --
+- UC5(Ecology (NIF Bacteria)): --
+- UC6(Protein - IFA - RNASeq): --
 
 
 
