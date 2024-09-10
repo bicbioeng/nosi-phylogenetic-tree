@@ -5,9 +5,9 @@ Date: 7/12/2024
 import subprocess
 
 # Define the paths
-fasta_file = "data/kegg/br01553.fasta"
+fasta_file = "data/cov/sequences.fasta"
 clustalw_exe = "C:\\Program Files (x86)\\ClustalW2\\clustalw2.exe"
-seq_algn_file = "data/kegg/br01553.aln"
+seq_algn_file = "data/cov/sequences.aln"
 # Run ClustalW for multiple sequence alignment using subprocess
 try:
     subprocess.run([clustalw_exe, "-INFILE=" + fasta_file, "-OUTFILE=" + seq_algn_file, "-OUTPUT=FASTA"], check=True)
