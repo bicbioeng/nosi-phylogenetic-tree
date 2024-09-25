@@ -50,15 +50,12 @@ The course consists of 4 learning submodules:
 Our Analysis Workflow Toolkits includes the following tools: 
 - Jupyther Notebook
 - FastQC
-- MultiQC
-- Trimmomatic
-- Blast
 - ClustalW
+- Nextstrain Augur
 - USHER
-- RAxML
-- FigTree
+- MAFFT
 - iTOL
-- MUMmer
+- Blast
 - BEAST
 
 Each dependency will be loaded at the beginning of the module and will allow the user to understand the context in which the package is relevant to our analytic process.
