@@ -50,8 +50,8 @@ The course consists of 4 learning submodules:
 Our Analysis Workflow Toolkits includes the following tools: 
 - Jupyther Notebook
 - FastQC
-- ClustalW
 - Nextstrain Augur
+- ClustalW
 - USHER
 - MAFFT
 - iTOL
@@ -93,7 +93,7 @@ This submodule demonstrates the process of collecting and preparing genetic sequ
 - **Data Cleaning and Preprocessing**: Implementing tools such as Trimmomatic for quality control, trimming low-quality reads, and preparing sequences for alignment.
 - **Sequence Alignment**: Using tools like MAFFT or ClustalW to align sequences and ensure accurate phylogenetic analysis.
 - **Cloud-Based Storage Solutions**: Discussion on the scalability, accessibility, and cost-effectiveness of cloud-based systems for managing large metagenomic datasets.
-- **Data Integrity Checks**: Implementing quality control checks using tools like FastQC and MultiQC to ensure data quality before analysis.
+- **Data Integrity Checks**: Implementing quality control checks using tools like FastQC to ensure data quality before analysis.
 
 By the end of this submodule, learners will have hands-on experience sourcing, cleaning, and preparing data for constructing accurate phylogenetic trees.
 
@@ -104,8 +104,8 @@ In this submodule, learners will walk through the process of constructing a phyl
 ### Key Topics Covered:
 #### 3.1 Perform Accurate Sequence Alignment using ClustalW and Augur:
 Sequence alignment arranges sequences to highlight similarities and differences. This submodule demonstrates how to perform sequence alignment using ClustalW and Augur.
-- **ClustalW**: A tool for aligning multiple sequences. Learners will install and run ClustalW via Python's Biopython library and analyze the results.
 - **Augur**: Used for aligning metagenomic data, especially SARS-CoV-2 sequences, preparing them for phylogenetic tree construction.
+- **ClustalW**: A tool for aligning multiple sequences. Learners will install and run ClustalW via Python's Biopython library and analyze the results.
 - **Command Execution**: A detailed explanation of the necessary steps to install the tools, prepare the input FASTA files, and execute sequence alignment.
 
 #### 3.2 Manage Computational Intensity through Cloud Computing:
@@ -117,8 +117,8 @@ USHER (Ultrafast Sample Placement on Existing tRee) is a tool used to place samp
 - **Tree Reconstruction**: Learners will clone the USHER repository, install necessary dependencies, and perform phylogenetic tree reconstruction using aligned sequences. The final output is a Newick tree file representing the evolutionary relationships between the sequences.
 
 ### Tools and Dependencies:
-- **ClustalW**: Sequence alignment tool.
 - **Augur**: Nextstrain alignment tool for metagenomic sequences.
+- **ClustalW**: Sequence alignment tool.
 - **MAFFT**: Multiple sequence alignment software.
 - **FastTree**: For creating Newick tree files.
 - **USHER**: A tool for rapid phylogenetic tree placement.
@@ -126,7 +126,22 @@ USHER (Ultrafast Sample Placement on Existing tRee) is a tool used to place samp
 This submodule provides hands-on experience with multiple tools for phylogenetic tree construction and highlights how to use cloud resources to manage the computational requirements.
 
 ## Submodule 4: Analyze Phylogenetic Tree
-This submodule includes analyzing the phylogenetic tree for comparative metagenomics and ancestral state reconstruction.
+
+In this submodule, learners will analyze phylogenetic trees by interpreting evolutionary relationships, investigating genomic diversity, and conducting comparative studies using multiple visualization tools. The primary focus will be on understanding tree topology and applying this knowledge to various biological questions.
+
+### Key Topics Covered:
+- **Introduction to Phylogenetic Tree Analysis**: Overview of phylogenetic tree structures, understanding branching patterns, and how to interpret evolutionary relationships from tree topology.
+- **Tree Visualization with IQ-TREE and iTOL**: IQ-TREE will be the primary tool for visualizing phylogenetic trees, with iTOL provided as an alternative. Learners will install and configure IQ-TREE, generate visual representations, and apply iTOL to explore additional visualization features.
+- **Comparative Genomics Analysis**: Using the constructed phylogenetic trees to compare genomic features across species, identify conserved regions, and infer functional implications.
+- **Ancestral State Reconstruction**: Estimating ancestral traits and character states for evolutionary inference, utilizing tree topology to explore evolutionary paths and changes.
+- **Detecting Phylogenetic Signals**: Techniques for identifying evolutionary signals and trends in sequence data, assessing significance, and interpreting evolutionary relationships.
+
+### Tools and Dependencies:
+- **IQ-TREE**: Main tool for phylogenetic tree visualization and statistical analysis.
+- **iTOL (Interactive Tree of Life)**: Alternative visualization tool that offers additional interactive features for tree exploration.
+
+This submodule enables learners to gain hands-on experience in analyzing and interpreting phylogenetic trees, with the goal of drawing meaningful insights about evolutionary patterns and species relationships.
+
 
 ## Data
 This training module will use 6 different datasets to cover the diversity of our problem for each of the use cases shown.
