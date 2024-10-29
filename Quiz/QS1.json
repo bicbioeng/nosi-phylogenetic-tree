@@ -1,0 +1,132 @@
+[
+    {
+        "question": "What is the primary purpose of a phylogenetic tree?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "To illustrate the physical appearance of species",
+                "correct": false,
+                "feedback": "Incorrect. Phylogenetic trees do not illustrate physical appearance."
+            },
+            {
+                "answer": "To show the geographical distribution of organisms",
+                "correct": false,
+                "feedback": "Incorrect. Phylogenetic trees are not used to show geographical distribution."
+            },
+            {
+                "answer": "To represent evolutionary connections and ancestral relationships",
+                "correct": true,
+                "feedback": "Correct. Phylogenetic trees represent evolutionary connections and ancestral relationships."
+            },
+            {
+                "answer": "To calculate the age of fossils",
+                "correct": false,
+                "feedback": "Incorrect. Phylogenetic trees do not calculate fossil ages."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following is NOT a function of phylogenetic trees?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Tracing evolutionary pathways",
+                "correct": false,
+                "feedback": "Incorrect. Tracing evolutionary pathways is a key function of phylogenetic trees."
+            },
+            {
+                "answer": "Mapping genetic changes",
+                "correct": false,
+                "feedback": "Incorrect. Mapping genetic changes is also a function of phylogenetic trees."
+            },
+            {
+                "answer": "Predicting future evolutionary trends",
+                "correct": true,
+                "feedback": "Correct. Phylogenetic trees do not predict future evolutionary trends."
+            },
+            {
+                "answer": "Understanding biodiversity",
+                "correct": false,
+                "feedback": "Incorrect. Phylogenetic trees help understand biodiversity."
+            }
+        ]
+    },
+    {
+        "question": "What is the main data source used for creating phylogenetic trees?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Fossil records",
+                "correct": false,
+                "feedback": "Incorrect. Fossil records are not the main source for creating phylogenetic trees."
+            },
+            {
+                "answer": "Behavioral observations",
+                "correct": false,
+                "feedback": "Incorrect. Behavioral observations are not typically used in phylogenetic tree construction."
+            },
+            {
+                "answer": "Genetic sequences",
+                "correct": true,
+                "feedback": "Correct. Genetic sequences are the main data source used for phylogenetic trees."
+            },
+            {
+                "answer": "Geographical data",
+                "correct": false,
+                "feedback": "Incorrect. Geographical data is not used to create phylogenetic trees."
+            }
+        ]
+    },
+    {
+        "question": "Which type of phylogenetic tree has a single ancestral root?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Unrooted tree",
+                "correct": false,
+                "feedback": "Incorrect. An unrooted tree does not have a single ancestral root."
+            },
+            {
+                "answer": "Cladogram",
+                "correct": false,
+                "feedback": "Incorrect. A cladogram can be either rooted or unrooted."
+            },
+            {
+                "answer": "Phylogram",
+                "correct": false,
+                "feedback": "Incorrect. Phylograms do not always have a single ancestral root."
+            },
+            {
+                "answer": "Rooted tree",
+                "correct": true,
+                "feedback": "Correct. A rooted tree has a single ancestral root."
+            }
+        ]
+    },
+    {
+        "question": "What does a phylogram provide that a cladogram does not?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Branching order",
+                "correct": false,
+                "feedback": "Incorrect. Both phylograms and cladograms show branching order."
+            },
+            {
+                "answer": "Evolutionary relationships",
+                "correct": false,
+                "feedback": "Incorrect. Both phylograms and cladograms represent evolutionary relationships."
+            },
+            {
+                "answer": "Branch lengths indicating amount of change",
+                "correct": true,
+                "feedback": "Correct. Phylograms show branch lengths that indicate the amount of evolutionary change."
+            },
+            {
+                "answer": "Common ancestor information",
+                "correct": false,
+                "feedback": "Incorrect. Both types can represent common ancestor information."
+            }
+        ]
+    }
+]
