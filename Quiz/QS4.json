@@ -1,0 +1,132 @@
+[
+    {
+        "question": "What is the primary purpose of using visualization tools in phylogenetic tree analysis?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "To improve data storage",
+                "correct": false,
+                "feedback": "Incorrect. Visualization tools are not used to improve data storage."
+            },
+            {
+                "answer": "To enable interactive editing of the sequences",
+                "correct": false,
+                "feedback": "Incorrect. Visualization tools are used to interpret data, not edit sequences."
+            },
+            {
+                "answer": "To interpret and communicate evolutionary relationships",
+                "correct": true,
+                "feedback": "Correct. Visualization tools help interpret and communicate evolutionary relationships."
+            },
+            {
+                "answer": "To run genetic sequence alignments",
+                "correct": false,
+                "feedback": "Incorrect. Visualization tools are not used for sequence alignment."
+            }
+        ]
+    },
+    {
+        "question": "Which tool is recommended as the main software for phylogenetic tree visualization in this submodule?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "iTOL",
+                "correct": false,
+                "feedback": "Incorrect. iTOL is an alternative tool but not the main one used here."
+            },
+            {
+                "answer": "IQ-TREE",
+                "correct": true,
+                "feedback": "Correct. IQ-TREE is recommended as the main visualization tool in this submodule."
+            },
+            {
+                "answer": "BLAST",
+                "correct": false,
+                "feedback": "Incorrect. BLAST is used for sequence alignment, not tree visualization."
+            },
+            {
+                "answer": "BEAST",
+                "correct": false,
+                "feedback": "Incorrect. BEAST is primarily used for tree construction, not visualization."
+            }
+        ]
+    },
+    {
+        "question": "What is the purpose of comparative metagenomics in the context of phylogenetic analysis?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "To visualize the phylogenetic tree",
+                "correct": false,
+                "feedback": "Incorrect. Comparative metagenomics is not used for visualization."
+            },
+            {
+                "answer": "To compare the genetic content across different branches of the tree",
+                "correct": true,
+                "feedback": "Correct. Comparative metagenomics is used to compare genetic content across tree branches."
+            },
+            {
+                "answer": "To align sequences from different species",
+                "correct": false,
+                "feedback": "Incorrect. Comparative metagenomics is not primarily for aligning sequences."
+            },
+            {
+                "answer": "To build a BLAST database for ancestral traits",
+                "correct": false,
+                "feedback": "Incorrect. Comparative metagenomics does not involve building BLAST databases."
+            }
+        ]
+    },
+    {
+        "question": "Which software is used in this submodule to perform ancestral state reconstruction?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Biopython",
+                "correct": false,
+                "feedback": "Incorrect. Biopython is used for general bioinformatics tasks but not for ancestral state reconstruction."
+            },
+            {
+                "answer": "iTOL",
+                "correct": false,
+                "feedback": "Incorrect. iTOL is a visualization tool, not used for ancestral state reconstruction."
+            },
+            {
+                "answer": "IQ-TREE",
+                "correct": false,
+                "feedback": "Incorrect. IQ-TREE is used for tree visualization, not for ancestral state reconstruction."
+            },
+            {
+                "answer": "BEAST",
+                "correct": true,
+                "feedback": "Correct. BEAST is used in this submodule for ancestral state reconstruction."
+            }
+        ]
+    },
+    {
+        "question": "What is a key benefit of automating comparative metagenomics analysis with Biopython?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It improves the visualization of phylogenetic trees",
+                "correct": false,
+                "feedback": "Incorrect. While Biopython supports data handling, it is not used for tree visualization improvements."
+            },
+            {
+                "answer": "It simplifies and accelerates the analysis process",
+                "correct": true,
+                "feedback": "Correct. Automation with Biopython simplifies and speeds up comparative metagenomics analysis."
+            },
+            {
+                "answer": "It generates a more accurate phylogenetic tree",
+                "correct": false,
+                "feedback": "Incorrect. Biopython aids in analysis but does not directly improve tree accuracy."
+            },
+            {
+                "answer": "It identifies the evolutionary pressures affecting a species",
+                "correct": false,
+                "feedback": "Incorrect. Comparative metagenomics is not used specifically for identifying evolutionary pressures."
+            }
+        ]
+    }
+]

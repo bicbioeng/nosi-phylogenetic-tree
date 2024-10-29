@@ -1,0 +1,132 @@
+[
+    {
+        "question": "What is the primary purpose of sequence alignment in phylogenetic analysis?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "To generate sequence files",
+                "correct": false,
+                "feedback": "Incorrect. Sequence alignment does not generate sequence files."
+            },
+            {
+                "answer": "To arrange sequences based on similarity and differences for accurate tree construction",
+                "correct": true,
+                "feedback": "Correct. Sequence alignment arranges sequences to reflect similarity and differences, aiding accurate tree construction."
+            },
+            {
+                "answer": "To modify DNA sequences",
+                "correct": false,
+                "feedback": "Incorrect. Sequence alignment does not modify DNA sequences."
+            },
+            {
+                "answer": "To identify mutations",
+                "correct": false,
+                "feedback": "Incorrect. Identifying mutations is a possible outcome, but it is not the primary purpose of alignment in phylogenetics."
+            }
+        ]
+    },
+    {
+        "question": "Which tool is primarily recommended for sequence alignment in this workflow?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "USHER",
+                "correct": false,
+                "feedback": "Incorrect. USHER is mainly used for tree construction."
+            },
+            {
+                "answer": "ClustalW",
+                "correct": false,
+                "feedback": "Incorrect. ClustalW is a sequence alignment tool but is not the primary tool recommended here."
+            },
+            {
+                "answer": "Augur (Nextstrain)",
+                "correct": true,
+                "feedback": "Correct. Augur from Nextstrain is recommended for sequence alignment in this workflow."
+            },
+            {
+                "answer": "MAFFT",
+                "correct": false,
+                "feedback": "Incorrect. MAFFT is another alignment tool but not the primary one suggested here."
+            }
+        ]
+    },
+    {
+        "question": "Why is cloud computing beneficial for sequence alignment in metagenomic datasets?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "It reduces computational intensity",
+                "correct": true,
+                "feedback": "Correct. Cloud computing reduces computational load by providing scalable resources."
+            },
+            {
+                "answer": "It allows multiple users to modify sequences simultaneously",
+                "correct": false,
+                "feedback": "Incorrect. Cloud computing primarily aids in computational efficiency rather than simultaneous modification."
+            },
+            {
+                "answer": "It increases the dataset size",
+                "correct": false,
+                "feedback": "Incorrect. Cloud computing supports large datasets but does not increase their size."
+            },
+            {
+                "answer": "It stores data indefinitely",
+                "correct": false,
+                "feedback": "Incorrect. Cloud computing offers storage but does not ensure indefinite data retention."
+            }
+        ]
+    },
+    {
+        "question": "What kernel requirement should be considered when running USHER for phylogenetic tree reconstruction?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The kernel needs to be set to Python 2",
+                "correct": false,
+                "feedback": "Incorrect. Python 2 is not a requirement for running USHER."
+            },
+            {
+                "answer": "A dedicated kernel is required due to different dependencies",
+                "correct": true,
+                "feedback": "Correct. A dedicated kernel is recommended for USHER due to dependency management."
+            },
+            {
+                "answer": "USHER should be installed in the same kernel as other tools",
+                "correct": false,
+                "feedback": "Incorrect. A separate kernel is often used to avoid dependency conflicts."
+            },
+            {
+                "answer": "The kernel version must be the latest version",
+                "correct": false,
+                "feedback": "Incorrect. A specific kernel version is not required as long as dependencies are managed."
+            }
+        ]
+    },
+    {
+        "question": "What file format is typically generated for tree visualization using FastTree?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "FASTA",
+                "correct": false,
+                "feedback": "Incorrect. FASTA is a format for sequence data, not for tree visualization."
+            },
+            {
+                "answer": "VCF",
+                "correct": false,
+                "feedback": "Incorrect. VCF is a format for variant data, not for phylogenetic trees."
+            },
+            {
+                "answer": "CSV",
+                "correct": false,
+                "feedback": "Incorrect. CSV is a general data format, not commonly used for tree visualization."
+            },
+            {
+                "answer": "Newick",
+                "correct": true,
+                "feedback": "Correct. Newick format is typically used for phylogenetic tree visualization."
+            }
+        ]
+    }
+]
