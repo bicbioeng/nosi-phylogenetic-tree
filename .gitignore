@@ -171,3 +171,8 @@ usher
 .virtual_documents
 
 experiments
+HealthOmics-methylseq
+omx-ecr-helper
+aws_ecr.ipynb
+amazon-omics-tutorials
+parameters.json
