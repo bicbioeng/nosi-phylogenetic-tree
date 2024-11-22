@@ -163,6 +163,11 @@ cython_debug/
 data
 !data/cov/sequence_PQ230960.fasta
 !data/cov/sequences.fasta
+<<<<<<< HEAD
+=======
+!data/cov/br01553.fasta
+
+>>>>>>> 0dc47f8da47fc14ca9f5ebd61ab2e8a79da0f218
 
 *.html
 *.zip
