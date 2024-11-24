@@ -161,9 +161,11 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 
-!data/cov/sequence_PQ230960.fasta
-!data/cov/sequences.fasta
-!data/cov/br01553.fasta
+data/cov/alignment
+data/cov/analysis_result
+data/cov/phylogenetic_tree
+data/cov/qc
+data/cov/visualization
 
 *.html
 *.zip
