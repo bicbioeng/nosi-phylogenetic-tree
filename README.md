@@ -179,3 +179,53 @@ Text and materials are licensed under a Creative Commons CC-BY-NC-SA license. Th
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+#### Dikshya
+## 2.2 Importance of Cloud-Based Storage Solutions
+
+Cloud-based storage solutions simplify the management of large-scale sequence data.
+
+### Benefits of Cloud-Based Solutions
+1. **Scalability:** Handle large datasets without local storage constraints.
+2. **Accessibility:** Enable real-time collaboration by making datasets accessible from any location.
+3. **Cost-Effectiveness:** Pay-as-you-go models minimize costs by charging only for used resources.
+4. **Data Security and Backup:** Automatic backups and encryption protect datasets from loss or breaches.
+
+<div style="padding: 10px; border: 1px solid #b3e5fc; border-radius: 5px; background-color: #e1f5fe;">
+    <strong>Note:</strong> 📝 Consider using established platforms like AWS, Google Cloud, or Azure to streamline data storage and processing.
+</div>
+
+### submodule 3
+## 3.3 Manage Computational Intensity Through Cloud Computing
+
+Cloud computing refers to the use of remote servers hosted on the internet to store, manage, and process data instead of relying on local hardware. It allows researchers to access virtually unlimited computational resources without the need to invest in expensive infrastructure.
+
+### 3.3.1 Why Use Cloud Computing for Phylogenetics?
+1. **Scalability:**
+   - Cloud platforms automatically adjust resources based on the size of the dataset.
+   - For example, small datasets may require minimal resources, while large datasets (thousands of sequences) can leverage more virtual CPUs or GPUs as needed.
+
+2. **Cost-Effectiveness:**
+   - Pay-as-you-go models allow researchers to optimize costs by paying only for the resources they use.
+
+3. **Accessibility:**
+   - Cloud services enable researchers to access computational resources and data from anywhere, supporting collaboration across teams and geographies.
+
+### 3.3.2 How Cloud Computing Works in Phylogenetics?
+1. **Input Data:**
+- Upload your sequence data (e.g., FASTA files) to the cloud storage provided by the platform
+  
+2. **Set Up the Environment:**
+- Use pre-configured machine images (e.g., Ubuntu with MAFFT installed) or create your own environment.
+- Choose the instance type based on the task (e.g., high-memory machines for large alignments).
+  
+3. **Run the Workflow:**
+- Use tools like MAFFT for sequence alignment and USHER for tree construction.
+- Jobs can run on virtual CPUs or GPUs for faster performance.
+  
+4. **Retrieve Results:**
+- Download the aligned sequences, VCF files, or constructed trees for further analysis.
+
+  <div style="padding: 10px; border: 1px solid #b3e5fc; border-radius: 5px; background-color: #e1f5fe;">
+    <strong>Note:</strong> 📝 Always configure your cloud environment to balance performance and cost, and ensure data security protocols are followed when working with sensitive datasets.
+</div>
+
