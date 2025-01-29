@@ -37,10 +37,11 @@ RUN mamba install --quiet --yes -c conda-forge \
     'matplotlib' \
     'scipy' \
     'beast'
-RUN mamba install --quiet --yes usher
+RUN mamba install --quiet --yes usher fasttree
 #RUN mamba clean --all -f -y
 
 WORKDIR $HOME
+COPY . /home/app
 USER ${NB_UID}
 
 CMD jupyter lab --ip 0.0.0.0 --port 8888 \

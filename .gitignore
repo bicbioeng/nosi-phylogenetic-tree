@@ -167,7 +167,7 @@ data/cov/phylogenetic_tree
 data/cov/qc
 data/cov/visualization
 
-*.html
+#*.html
 *.zip
 
 usher
