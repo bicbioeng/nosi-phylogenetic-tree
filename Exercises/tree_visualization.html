@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phylogenetic Tree Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/phylotree@1.0.0/phylotree.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <h2>Phylogenetic Tree Visualization</h2>
+    <div id="tree-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("aligned_sequences.treefile")  // Ensure file is in the same directory
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Failed to load Newick file: " + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(newickData => {
+                    console.log("Loaded Newick Data:", newickData); // Debugging output
+
+                    if (newickData.trim() === "") {
+                        throw new Error("Newick file is empty.");
+                    }
+
+                    // Create the PhyloTree object
+                    var tree = new phylotree.phylotree(newickData);
+
+                    // Append SVG to render the tree
+                    d3.select("#tree-container").append("svg")
+                        .attr("width", 800)
+                        .attr("height", 600)
+                        .call(tree.render());
+
+                    console.log("Tree rendered successfully!");
+                })
+                .catch(error => {
+                    console.error("Error loading Newick file:", error);
+                    document.getElementById("tree-container").innerHTML = 
+                        "<p style='color: red;'>Error loading tree: " + error.message + "</p>";
+                });
+        });
+    </script>
+</body>
+</html>
