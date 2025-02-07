@@ -44,7 +44,10 @@ WORKDIR $HOME
 COPY . /home/app
 USER ${NB_UID}
 
+#ENV DEBIAN_FRONTEND=noninteractive
+
 CMD jupyter lab --ip 0.0.0.0 --port 8888 \
-  --ServerApp.base_url="/jupyterlab/default" \
+#  --ServerApp.base_url="/jupyterlab/default" \
   --ServerApp.token='' \
+  --no-browser \
   --ServerApp.allow_origin='*'
