@@ -85,18 +85,27 @@ This submodule sets the foundation for subsequent modules by establishing a clea
 
 ### Submodule 2: Collect and Prepare Sequence Data for Analysis
 
-This submodule demonstrates the process of collecting and preparing genetic sequence data for phylogenetic tree analysis, with a focus on practical tools and cloud-based solutions.
+This submodule demonstrates the process of efficiently sourcing and preparing genetic sequence data for phylogenetic tree analysis, focusing on practical tools and publicly available datasets.
 
 #### Key Topics Covered:
-- **Introduction to Data Collection and Preparation**:
 
-Learners are introduced to the essential steps for gathering and organizing sequence data required for phylogenetic analysis. This module focuses on ensuring the readiness of sequence data for downstream processes by utilizing various datasets from sources like NCBI. Understanding how to efficiently collect and structure this data is a crucial step in constructing phylogenetic trees.  
+**Introduction to Data Collection and Preparation**  
 
-- **Exploring and Downloading Sequence Data**
+  Learners will be introduced to systematic methods for gathering and organizing sequence data required for phylogenetic analysis. This module emphasizes the importance of data readiness by leveraging public repositories such as **NCBI, KEGG, and UniProt**. Efficient collection and structuring of sequence data are crucial steps in constructing phylogenetic trees.  
 
-This module guides learners through working with key datasets such as **sequences.fasta, sequences_subset.fasta, and sequence_PQ649471.1.fasta**. Additionally, it provides instructions for retrieving protein sequences from **UniProt**, a comprehensive resource for protein data. 
+**Efficient Methods for Retrieving Sequence Data**  
 
-By the end of this submodule, learners will have hands-on experience sourcing, cleaning, and preparing data for constructing accurate phylogenetic trees.
+  This module provides step-by-step guidance on obtaining sequence datasets using both graphical user interfaces (GUI) and command-line tools:  
+  - **NCBI Virus Database**: Search, filter, and download nucleotide sequences using metadata like taxonomy ID, collection date, and geographic location.  
+  - **Entrez Direct (CLI)**: Automate sequence retrieval using command-line queries to fetch specific datasets.  
+  - **Public Data Sources**: Retrieve protein sequences from **UniProt**, which offers comprehensive protein sequence and functional data.  
+
+**Working with Key Dataset**  
+
+  Learners will work with the following dataset:  
+  - **`sequences.fasta`** – A comprehensive dataset containing full nucleotide sequences for phylogenetic analysis. This dataset includes genetic sequences collected from **01/01/2023 to 03/31/2023** for the **South Dakota region of the USA**.  
+
+By the end of this submodule, learners will gain hands-on experience in sourcing, filtering, and preparing sequence data for constructing accurate phylogenetic trees. Additionally, they will learn best practices for organizing data and leveraging public datasets to enhance their analyses.
 
 ### Submodule 3: Construct Phylogenetic Tree
 
@@ -130,7 +139,7 @@ In this submodule, learners will focus on interpreting and visually representing
 #### Key Topics Covered:  
 - **Tree Visualization and Representation**: Applying visualization tools to generate clear and interpretable phylogenetic trees.
 - **Comparative Metagenomics Analysis**: Leveraging automation to improve throughput and accuracy in genomic comparisons.  
-- **Enhancing Data Processing with BLAST Automation**: Streamlining BLAST searches for large datasets, reducing manual intervention while maintaining consistency in results.  
+
 
 By integrating automation and visualization techniques, learners will gain hands-on experience in efficiently analyzing phylogenetic trees, enabling them to apply these skills in large-scale comparative genomics research.  
 
@@ -148,12 +157,12 @@ This submodule enables learners to gain hands-on experience in analyzing and int
 
 ### Data
 This training module will use 6 different datasets to cover the diversity of our problem for each of the use cases shown.
-- UC1(Covid Epidemiology): --
-- UC2(Protein Alignment): --
-- UC3(Pan-genomics & Core Genome): --
-- UC4(Cancer): --
-- UC5(Ecology (NIF Bacteria)): --
-- UC6(Protein - IFA - RNASeq): --
+- **UC1(Covid Epidemiology): Demo Tutorial** 
+- UC2(Protein Alignment): In developing--
+- UC3(Pan-genomics & Core Genome): In developing--
+- UC4(Cancer):In developing --
+- UC5(Ecology (NIF Bacteria)): In developing--
+- UC6(Protein - IFA - RNASeq): In developing --
 
 
 
@@ -164,7 +173,7 @@ Common errors encountered in this workflow include:
     - Wrong file path: Find the correct file in notebook directories, then update the correct file path.
     - File does not exist: Find path in the provided bucket or notebook and update command.
     - File was not generated: Check previous steps make sure previous step run successfully.
-2. ----
+
 
 
 ### Funding
