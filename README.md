@@ -11,7 +11,7 @@
 - [Software Requirements](#software-requirements)
 - [Workflow Diagrams](#workflow-diagrams)
 - [Submodule 1 Understanding the Basics of Phylogenetic](#submodule-1-understanding-the-basics-of-phylogenetic)
-- [Submodule 2 Collect and Prepare Sequence Data and Analysis](#submodule-2-collect-and-prepare-sequence-data-and-analysis)
+- [Submodule 2 Collect and Prepare Sequence Data](#submodule-2-collect-and-prepare-sequence-data)
 - [Submodule 3 Construct Phylogenetic Tree](#submodule-3-construct-phylogenetic-tree)
 - [Submodule 4 Analyze Phylogenetic Tree](#submodule-4-analyze-phylogenetic-tree)
 - [Data](#data)
@@ -20,7 +20,7 @@
 - [License for Data](#license-for-data) 
 
 
-## **Overview**
+### **Overview**
 This README should walk the learner through the background and steps necessary to complete this training module. To use our module, clone this repo using `git clone https://github.com/bicbioeng/nosi-phylogeny-draft.git` and then navigate to the directory for this project.
 
 The study and understanding of phylogenetic trees have become an indispensable part of modern biological research. Phylogenetic trees provide profound insights into the evolutionary relationships between. They also help in understanding the spread of diseases, such as the origin and evolution of pathogens, the time and space distribution of prevalence, and the prediction of pathogen transmission trends. Additionally, phylogenetic trees are used to study the functional genomics of various species, including the emergence of new body plans or metabolism, molecular adaptation, morphological character evolution, and demographic changes in recently diverged species. The advancement of sequencing technologies has greatly contributed to the analysis of phylogenetic trees, allowing for the analysis of large datasets, including whole genomes. Overall, phylogenetic trees play a crucial role in various biological disciplines, providing valuable insights into the evolutionary history and functional genomics of organisms.
@@ -28,7 +28,7 @@ The study and understanding of phylogenetic trees have become an indispensable p
 This README describes the tutorials in our step-by-step analytic workflow. These submodules cover the end-to-end workflow of a standard phylogenetic analysis, starting at extracting a gene sequence to creating a phylogenetic tree to analyzing the tree.
 
 
-## **Learning Objectives:**
+### **Learning Objectives:**
 The phylogenetic analysis modules will serve for undergraduate through graduate level.
 
 L01: Comprehensive Phylogenetic Analysis for Disease Dynamics
@@ -45,38 +45,37 @@ The course consists of 4 learning submodules:
 *Submodule #3: Construct Phylogenetic Tree*  
 *Submodule #4: Analyze Phylogenetic Tree* 
 
-## **Software Requirements**
+### **Software Requirements**
 
 Our Analysis Workflow Toolkits includes the following tools: 
 - Jupyther Notebook
-- FastQC
-- Nextstrain Augur
-- ClustalW
+- Nextclade
 - USHER
+- Fasttree
+- IQ-Tree
 - MAFFT
 - iTOL
 - Blast
-- BEAST
 
 Each dependency will be loaded at the beginning of the module and will allow the user to understand the context in which the package is relevant to our analytic process.
 
-## **Workflow Diagram**
+### **Workflow Diagram**
 
-## Bioinformatics Workflow Diagrams
+### Bioinformatics Workflow Diagrams
 
-![USD workflow](images/allmodules.png)
+![USD workflow](images/phylogenetic-workflowdiagram.png)
 Figure 2: Our learning objectives encompass a comprehensive understanding of phylogenetic analysis, from data collection and
 preparation to tree construction and interpretation, enabling participants to conduct meaningful analysis in diverse metagenomic
 context
 
-## General Overall Process
-![general overall process](images/workflow.png)
+### General Overall Process
+![general overall process](images/workflow1.png)
 
-## Submodule 1: Understanding the Basics of Phylogenetics
+### Submodule 1: Understanding the Basics of Phylogenetics
 
 In this submodule, learners will be introduced to the fundamental concepts of phylogenetic trees, which represent evolutionary relationships among species or organisms. These trees are based on physical traits and genetic data and serve as hypotheses about the evolutionary history of the organisms studied.
 
-### Key Topics Covered:
+#### Key Topics Covered:
 - **Definition and Purpose of Phylogenetic Trees**: Understanding how they map evolutionary connections, trace genetic changes, and study biodiversity.
 - **Types of Phylogenetic Trees**: Learn about rooted and unrooted trees, cladograms, phylograms, and dendrograms.
 - **Data Sources for Phylogenetic Trees**: Explore various sources like genetic sequences, public databases, and sequencing technologies for constructing phylogenetic trees.
@@ -84,66 +83,70 @@ In this submodule, learners will be introduced to the fundamental concepts of ph
 
 This submodule sets the foundation for subsequent modules by establishing a clear understanding of how phylogenetic trees are constructed and their significance in evolutionary studies.
 
-## Submodule 2: Collect and Prepare Sequence Data for Analysis
+### Submodule 2: Collect and Prepare Sequence Data for Analysis
 
 This submodule demonstrates the process of collecting and preparing genetic sequence data for phylogenetic tree analysis, with a focus on practical tools and cloud-based solutions.
 
-### Key Topics Covered:
-- **Efficient Methods for Sourcing Sequences**: Using public databases like GenBank and automated tools (e.g., Entrez Direct, Biopython) for efficient sequence retrieval.
-- **Data Cleaning and Preprocessing**: Implementing tools such as Trimmomatic for quality control, trimming low-quality reads, and preparing sequences for alignment.
-- **Sequence Alignment**: Using tools like MAFFT or ClustalW to align sequences and ensure accurate phylogenetic analysis.
-- **Cloud-Based Storage Solutions**: Discussion on the scalability, accessibility, and cost-effectiveness of cloud-based systems for managing large metagenomic datasets.
-- **Data Integrity Checks**: Implementing quality control checks using tools like FastQC to ensure data quality before analysis.
+#### Key Topics Covered:
+- **Introduction to Data Collection and Preparation**:
+
+Learners are introduced to the essential steps for gathering and organizing sequence data required for phylogenetic analysis. This module focuses on ensuring the readiness of sequence data for downstream processes by utilizing various datasets from sources like NCBI. Understanding how to efficiently collect and structure this data is a crucial step in constructing phylogenetic trees.  
+
+- **Exploring and Downloading Sequence Data**
+
+This module guides learners through working with key datasets such as **sequences.fasta, sequences_subset.fasta, and sequence_PQ649471.1.fasta**. Additionally, it provides instructions for retrieving protein sequences from **UniProt**, a comprehensive resource for protein data. 
 
 By the end of this submodule, learners will have hands-on experience sourcing, cleaning, and preparing data for constructing accurate phylogenetic trees.
 
-## Submodule 3: Construct Phylogenetic Tree
+### Submodule 3: Construct Phylogenetic Tree
 
-In this submodule, learners will walk through the process of constructing a phylogenetic tree from gene sequence data. The key steps include performing sequence alignment and reconstructing the phylogenetic tree using different tools and techniques.
+In this submodule, learners will walk through the process of constructing a phylogenetic tree from gene sequence data. The key steps include performing sequence alignment and reconstructing the phylogenetic tree using different talgorithms and tools.
 
-### Key Topics Covered:
-#### 3.1 Perform Accurate Sequence Alignment using ClustalW and Augur:
-Sequence alignment arranges sequences to highlight similarities and differences. This submodule demonstrates how to perform sequence alignment using ClustalW and Augur.
-- **Augur**: Used for aligning metagenomic data, especially SARS-CoV-2 sequences, preparing them for phylogenetic tree construction.
-- **ClustalW**: A tool for aligning multiple sequences. Learners will install and run ClustalW via Python's Biopython library and analyze the results.
-- **Command Execution**: A detailed explanation of the necessary steps to install the tools, prepare the input FASTA files, and execute sequence alignment.
+#### Key Topics Covered:
+##### 3.1 Perform Accurate Sequence Alignment using MAFFT:
+Sequence alignment arranges DNA, RNA, or protein sequences to highlight evolutionary, functional, or structural relationships. This submodule demonstrates how to perform sequence alignment using MAFFT.
+- **MAFFT**: A widely used multiple sequence alignment tool that efficiently handles large datasets, ensuring homologous positions are compared across sequences.
+- **Execution and Analysis**: Learners will install and run MAFFT, prepare input FASTA files, and analyze aligned sequences for downstream phylogenetic tree construction.
 
-#### 3.2 Manage Computational Intensity through Cloud Computing:
-Sequence alignment can be computationally expensive. This section covers how to handle large metagenomic datasets using cloud computing to scale resources efficiently.
-- **Benefits**: Cloud computing offers scalability, cost-effectiveness, and accessibility, enhancing the computational power for sequence alignment and phylogenetic analysis.
+##### 3.2 Select the Appropriate Algorithm for Phylogenetic Tree Reconstruction
+- 1.Maximum Parsimony (MP)
+- 2.Maximum Likelihood (ML)
+- 3.Approximate Maximum Likelihood
+- 4.Bayesian Framework
 
-#### 3.3 Phylogenetic Tree Reconstruction using USHER:
-USHER (Ultrafast Sample Placement on Existing tRee) is a tool used to place samples onto a pre-existing phylogenetic tree rapidly.
-- **Tree Reconstruction**: Learners will clone the USHER repository, install necessary dependencies, and perform phylogenetic tree reconstruction using aligned sequences. The final output is a Newick tree file representing the evolutionary relationships between the sequences.
+##### Tools and Dependencies:
+1. **MAFFT**: Multiple sequence alignment software.
+2. **Nextclade**: A tool for sequence alignment, mutation calling, and phylogenetic placement.
+3. **USHER**: A tool for rapid phylogenetic tree placement.
+4. **IQ-TREE**: Phylogenetic analysis using maximum likelihood models.
+5. **FastTree**: Efficient software for constructing large-scale phylogenetic trees using heuristic methods.
 
-### Tools and Dependencies:
-- **Augur**: Nextstrain alignment tool for metagenomic sequences.
-- **ClustalW**: Sequence alignment tool.
-- **MAFFT**: Multiple sequence alignment software.
-- **FastTree**: For creating Newick tree files.
-- **USHER**: A tool for rapid phylogenetic tree placement.
+This submodule provides hands-on experience with multiple tools for phylogenetic tree construction.
 
-This submodule provides hands-on experience with multiple tools for phylogenetic tree construction and highlights how to use cloud resources to manage the computational requirements.
+### Submodule 4: Analyze Phylogenetic Tree
 
-## Submodule 4: Analyze Phylogenetic Tree
+In this submodule, learners will focus on interpreting and visually representing phylogenetic trees, automating analysis workflows, and enhancing comparative genomics through efficient data processing techniques. The primary goal is to develop a clear understanding of tree topology and apply automation to streamline large-scale phylogenetic studies.  
 
-In this submodule, learners will analyze phylogenetic trees by interpreting evolutionary relationships, investigating genomic diversity, and conducting comparative studies using multiple visualization tools. The primary focus will be on understanding tree topology and applying this knowledge to various biological questions.
+#### Key Topics Covered:  
+- **Tree Visualization and Representation**: Applying visualization tools to generate clear and interpretable phylogenetic trees.
+- **Comparative Metagenomics Analysis**: Leveraging automation to improve throughput and accuracy in genomic comparisons.  
+- **Enhancing Data Processing with BLAST Automation**: Streamlining BLAST searches for large datasets, reducing manual intervention while maintaining consistency in results.  
 
-### Key Topics Covered:
-- **Introduction to Phylogenetic Tree Analysis**: Overview of phylogenetic tree structures, understanding branching patterns, and how to interpret evolutionary relationships from tree topology.
-- **Tree Visualization with IQ-TREE and iTOL**: IQ-TREE will be the primary tool for visualizing phylogenetic trees, with iTOL provided as an alternative. Learners will install and configure IQ-TREE, generate visual representations, and apply iTOL to explore additional visualization features.
-- **Comparative Genomics Analysis**: Using the constructed phylogenetic trees to compare genomic features across species, identify conserved regions, and infer functional implications.
-- **Ancestral State Reconstruction**: Estimating ancestral traits and character states for evolutionary inference, utilizing tree topology to explore evolutionary paths and changes.
-- **Detecting Phylogenetic Signals**: Techniques for identifying evolutionary signals and trends in sequence data, assessing significance, and interpreting evolutionary relationships.
+By integrating automation and visualization techniques, learners will gain hands-on experience in efficiently analyzing phylogenetic trees, enabling them to apply these skills in large-scale comparative genomics research.  
 
-### Tools and Dependencies:
-- **IQ-TREE**: Main tool for phylogenetic tree visualization and statistical analysis.
-- **iTOL (Interactive Tree of Life)**: Alternative visualization tool that offers additional interactive features for tree exploration.
+#### Tools and Dependencies:
+1. **Nextclade** – Performs sequence alignment, quality control, mutation calling, and phylogenetic placement.  
+2. **iTOL (Interactive Tree of Life)** – A visualization tool for analyzing and annotating phylogenetic trees interactively.  
+3. **Auspice** – A browser-based tool for visualizing phylogenetic trees and associated metadata.  
+4. **IQ-TREE** – A maximum-likelihood-based phylogenetic tree inference tool for highly accurate evolutionary analysis.  
+5. **BLAST (Basic Local Alignment Search Tool)** – Used for sequence comparison, identifying homologous sequences, and analyzing evolutionary patterns.  
+6. **Biopython** – A Python library for automating phylogenetic and metagenomic workflows, including sequence analysis and BLAST queries.  
+
 
 This submodule enables learners to gain hands-on experience in analyzing and interpreting phylogenetic trees, with the goal of drawing meaningful insights about evolutionary patterns and species relationships.
 
 
-## Data
+### Data
 This training module will use 6 different datasets to cover the diversity of our problem for each of the use cases shown.
 - UC1(Covid Epidemiology): --
 - UC2(Protein Alignment): --
@@ -154,7 +157,7 @@ This training module will use 6 different datasets to cover the diversity of our
 
 
 
-## Troubleshooting
+### Troubleshooting
 
 Common errors encountered in this workflow include: 
 1. Missing file. This error can have multiple causes:
@@ -164,12 +167,12 @@ Common errors encountered in this workflow include:
 2. ----
 
 
-## Funding
+### Funding
 
 Funded by the South Dakota INBRE Program NIH/NIGMS P20 GM103443.
 
 
-## License for Data
+### License for Data
 
 All data and download files in STRING-DB are freely available under a 'Creative Commons BY 4.0' license.
 
@@ -178,54 +181,4 @@ Text and materials are licensed under a Creative Commons CC-BY-NC-SA license. Th
 ![Creative commons license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-#### Dikshya
-## 2.2 Importance of Cloud-Based Storage Solutions
-
-Cloud-based storage solutions simplify the management of large-scale sequence data.
-
-### Benefits of Cloud-Based Solutions
-1. **Scalability:** Handle large datasets without local storage constraints.
-2. **Accessibility:** Enable real-time collaboration by making datasets accessible from any location.
-3. **Cost-Effectiveness:** Pay-as-you-go models minimize costs by charging only for used resources.
-4. **Data Security and Backup:** Automatic backups and encryption protect datasets from loss or breaches.
-
-<div style="padding: 10px; border: 1px solid #b3e5fc; border-radius: 5px; background-color: #e1f5fe;">
-    <strong>Note:</strong> 📝 Consider using established platforms like AWS, Google Cloud, or Azure to streamline data storage and processing.
-</div>
-
-### submodule 3
-## 3.3 Manage Computational Intensity Through Cloud Computing
-
-Cloud computing refers to the use of remote servers hosted on the internet to store, manage, and process data instead of relying on local hardware. It allows researchers to access virtually unlimited computational resources without the need to invest in expensive infrastructure.
-
-### 3.3.1 Why Use Cloud Computing for Phylogenetics?
-1. **Scalability:**
-   - Cloud platforms automatically adjust resources based on the size of the dataset.
-   - For example, small datasets may require minimal resources, while large datasets (thousands of sequences) can leverage more virtual CPUs or GPUs as needed.
-
-2. **Cost-Effectiveness:**
-   - Pay-as-you-go models allow researchers to optimize costs by paying only for the resources they use.
-
-3. **Accessibility:**
-   - Cloud services enable researchers to access computational resources and data from anywhere, supporting collaboration across teams and geographies.
-
-### 3.3.2 How Cloud Computing Works in Phylogenetics?
-1. **Input Data:**
-- Upload your sequence data (e.g., FASTA files) to the cloud storage provided by the platform
-  
-2. **Set Up the Environment:**
-- Use pre-configured machine images (e.g., Ubuntu with MAFFT installed) or create your own environment.
-- Choose the instance type based on the task (e.g., high-memory machines for large alignments).
-  
-3. **Run the Workflow:**
-- Use tools like MAFFT for sequence alignment and USHER for tree construction.
-- Jobs can run on virtual CPUs or GPUs for faster performance.
-  
-4. **Retrieve Results:**
-- Download the aligned sequences, VCF files, or constructed trees for further analysis.
-
-  <div style="padding: 10px; border: 1px solid #b3e5fc; border-radius: 5px; background-color: #e1f5fe;">
-    <strong>Note:</strong> 📝 Always configure your cloud environment to balance performance and cost, and ensure data security protocols are followed when working with sensitive datasets.
-</div>
 
