@@ -121,7 +121,6 @@ Sequence alignment arranges DNA, RNA, or protein sequences to highlight evolutio
 - 1.Maximum Parsimony (MP)
 - 2.Maximum Likelihood (ML)
 - 3.Approximate Maximum Likelihood
-- 4.Bayesian Framework
 
 ##### Tools and Dependencies:
 1. **MAFFT**: Multiple sequence alignment software.
@@ -138,7 +137,7 @@ In this submodule, learners will focus on interpreting and visually representing
 
 #### Key Topics Covered:  
 - **Tree Visualization and Representation**: Applying visualization tools to generate clear and interpretable phylogenetic trees.
-- **Comparative Metagenomics Analysis**: Leveraging automation to improve throughput and accuracy in genomic comparisons.  
+- **Comparative Genomic**: Leveraging genomic comparisons to compare the epidemic trend in different geographic.  
 
 
 By integrating automation and visualization techniques, learners will gain hands-on experience in efficiently analyzing phylogenetic trees, enabling them to apply these skills in large-scale comparative genomics research.  
