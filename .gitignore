@@ -164,6 +164,7 @@ cython_debug/
 data/cov/alignment
 data/cov/analysis_result
 data/cov/phylogenetic_tree
+!data/cov/phylogenetic_tree/SD_phylogenetic_tree_reference_aligned_sequences.nwk
 data/cov/qc
 data/cov/visualization
 
