@@ -1,132 +1,55 @@
 [
-    {
-        "question": "Which of the following is NOT a recommended source for high-quality pathogen sequences?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "GenBank",
-                "correct": false,
-                "feedback": "Incorrect. GenBank is a widely used source for pathogen sequences."
-            },
-            {
-                "answer": "EMBL",
-                "correct": false,
-                "feedback": "Incorrect. EMBL is another reputable source for pathogen sequences."
-            },
-            {
-                "answer": "DDBJ",
-                "correct": false,
-                "feedback": "Incorrect. DDBJ is a recognized source for pathogen sequences."
-            },
-            {
-                "answer": "Google Scholar",
-                "correct": true,
-                "feedback": "Correct. Google Scholar is not a source for pathogen sequences."
-            }
-        ]
-    },
-    {
-        "question": "Why is cloud-based storage important in managing metagenomic sequence data?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "It automatically edits and corrects sequence data.",
-                "correct": false,
-                "feedback": "Incorrect. Cloud storage does not edit or correct data."
-            },
-            {
-                "answer": "It provides secure, scalable storage and accessibility for large datasets.",
-                "correct": true,
-                "feedback": "Correct. Cloud storage offers secure, scalable storage and accessibility."
-            },
-            {
-                "answer": "It replaces the need for sequence alignment tools.",
-                "correct": false,
-                "feedback": "Incorrect. Cloud storage does not replace sequence alignment tools."
-            },
-            {
-                "answer": "It directly performs phylogenetic analysis.",
-                "correct": false,
-                "feedback": "Incorrect. Cloud storage does not perform phylogenetic analysis."
-            }
-        ]
-    },
-    {
-        "question": "Which command is used in this notebook to download the SARS-CoV-2 dataset?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "!curl -O",
-                "correct": false,
-                "feedback": "Incorrect. The correct command is !wget -O."
-            },
-            {
-                "answer": "!wget -O",
-                "correct": true,
-                "feedback": "Correct. The !wget -O command is used for downloading the dataset."
-            },
-            {
-                "answer": "!git clone",
-                "correct": false,
-                "feedback": "Incorrect. This command is used to clone repositories."
-            },
-            {
-                "answer": "!ftp -O",
-                "correct": false,
-                "feedback": "Incorrect. The correct command is !wget -O."
-            }
-        ]
-    },
-    {
-        "question": "What is the purpose of using FastQC in this tutorial?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "To align sequence data.",
-                "correct": false,
-                "feedback": "Incorrect. FastQC is not used for sequence alignment."
-            },
-            {
-                "answer": "To download SARS-CoV-2 data.",
-                "correct": false,
-                "feedback": "Incorrect. FastQC does not download data."
-            },
-            {
-                "answer": "To assess the quality of sequence data.",
-                "correct": true,
-                "feedback": "Correct. FastQC is used to assess the quality of sequence data."
-            },
-            {
-                "answer": "To convert data formats from .fasta to .fastq.",
-                "correct": false,
-                "feedback": "Incorrect. FastQC does not convert data formats."
-            }
-        ]
-    },
-    {
-        "question": "What does the Python function fasta_to_fastq do in this notebook?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "It downloads sequence data from a URL.",
-                "correct": false,
-                "feedback": "Incorrect. This function does not download data."
-            },
-            {
-                "answer": "It converts .fastq files to .fasta format.",
-                "correct": false,
-                "feedback": "Incorrect. This function does not convert .fastq files to .fasta format."
-            },
-            {
-                "answer": "It prepares quality scores for each base in a .fasta file and writes it in .fastq format.",
-                "correct": true,
-                "feedback": "Correct. This function prepares quality scores and writes them in .fastq format."
-            },
-            {
-                "answer": "It removes duplicate sequences from a dataset.",
-                "correct": false,
-                "feedback": "Incorrect. This function does not remove duplicates."
-            }
-        ]
-    }
+  {
+    "question": "Which of the following is NOT a recommended source for high-quality pathogen sequences?",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "GenBank",
+        "correct": false,
+        "feedback": "Incorrect. GenBank is a widely used source for pathogen sequences."
+      },
+      {
+        "answer": "EMBL",
+        "correct": false,
+        "feedback": "Incorrect. EMBL is another reputable source for pathogen sequences."
+      },
+      {
+        "answer": "DDBJ",
+        "correct": false,
+        "feedback": "Incorrect. DDBJ is a recognized source for pathogen sequences."
+      },
+      {
+        "answer": "Google Scholar",
+        "correct": true,
+        "feedback": "Correct. Google Scholar is not a source for pathogen sequences."
+      }
+    ]
+  },
+
+  {
+    "question": "Which command is used in this notebook to download the SARS-CoV-2 dataset?",
+    "type": "multiple_choice",
+    "answers": [
+      {
+        "answer": "!curl -O",
+        "correct": false,
+        "feedback": "Incorrect. The correct command is !wget -O."
+      },
+      {
+        "answer": "!wget -O",
+        "correct": true,
+        "feedback": "Correct. The !wget -O command is used for downloading the dataset."
+      },
+      {
+        "answer": "!git clone",
+        "correct": false,
+        "feedback": "Incorrect. This command is used to clone repositories."
+      },
+      {
+        "answer": "!ftp -O",
+        "correct": false,
+        "feedback": "Incorrect. The correct command is !wget -O."
+      }
+    ]
+  }
 ]
