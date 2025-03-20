@@ -14669,7 +14669,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     line-height: 20pt;
     border: none;
     border-radius: 0.2rem;
-    transition: box-shadow 0.1s);
+    transition: box-shadow 0.1s;
 }
 
 .Input-text:focus {
@@ -14801,83 +14801,84 @@ var questionsWHaxHmwXwYJt=[
         ]
     },
     {
-        "question": "Which tool is primarily recommended for sequence alignment in this workflow?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "USHER",
-                "correct": false,
-                "feedback": "Incorrect. USHER is mainly used for tree construction."
-            },
-            {
-                "answer": "ClustalW",
-                "correct": false,
-                "feedback": "Incorrect. ClustalW is a sequence alignment tool but is not the primary tool recommended here."
-            },
-            {
-                "answer": "Augur (Nextstrain)",
-                "correct": true,
-                "feedback": "Correct. Augur from Nextstrain is recommended for sequence alignment in this workflow."
-            },
-            {
-                "answer": "MAFFT",
-                "correct": false,
-                "feedback": "Incorrect. MAFFT is another alignment tool but not the primary one suggested here."
-            }
-        ]
-    },
-    {
-        "question": "Why is cloud computing beneficial for sequence alignment in metagenomic datasets?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "It reduces computational intensity",
-                "correct": true,
-                "feedback": "Correct. Cloud computing reduces computational load by providing scalable resources."
-            },
-            {
-                "answer": "It allows multiple users to modify sequences simultaneously",
-                "correct": false,
-                "feedback": "Incorrect. Cloud computing primarily aids in computational efficiency rather than simultaneous modification."
-            },
-            {
-                "answer": "It increases the dataset size",
-                "correct": false,
-                "feedback": "Incorrect. Cloud computing supports large datasets but does not increase their size."
-            },
-            {
-                "answer": "It stores data indefinitely",
-                "correct": false,
-                "feedback": "Incorrect. Cloud computing offers storage but does not ensure indefinite data retention."
-            }
-        ]
-    },
-    {
-        "question": "What kernel requirement should be considered when running USHER for phylogenetic tree reconstruction?",
-        "type": "multiple_choice",
-        "answers": [
-            {
-                "answer": "The kernel needs to be set to Python 2",
-                "correct": false,
-                "feedback": "Incorrect. Python 2 is not a requirement for running USHER."
-            },
-            {
-                "answer": "A dedicated kernel is required due to different dependencies",
-                "correct": true,
-                "feedback": "Correct. A dedicated kernel is recommended for USHER due to dependency management."
-            },
-            {
-                "answer": "USHER should be installed in the same kernel as other tools",
-                "correct": false,
-                "feedback": "Incorrect. A separate kernel is often used to avoid dependency conflicts."
-            },
-            {
-                "answer": "The kernel version must be the latest version",
-                "correct": false,
-                "feedback": "Incorrect. A specific kernel version is not required as long as dependencies are managed."
-            }
-        ]
-    },
+    "question": "Which tool is primarily recommended for sequence alignment in this workflow?",
+    "type": "multiple_choice",
+    "answers": [
+        {
+            "answer": "USHER",
+            "correct": false,
+            "feedback": "Incorrect. USHER is mainly used for tree construction."
+        },
+        {
+            "answer": "MAFFT",
+            "correct": true,
+            "feedback": "Correct. MAFFT is recommended for sequence alignment in this workflow."
+        },
+        {
+            "answer": "NextClade",
+            "correct": false,
+            "feedback": "Incorrect. NextClade is used for viral sequence analysis but not primarily for sequence alignment."
+        },
+        {
+            "answer": "IQ-TREE",
+            "correct": false,
+            "feedback": "Incorrect. IQ-TREE is primarily used for phylogenetic tree inference."
+        }
+    ]
+},
+
+    // {
+    //     "question": "Why is cloud computing beneficial for sequence alignment in metagenomic datasets?",
+    //     "type": "multiple_choice",
+    //     "answers": [
+    //         {
+    //             "answer": "It reduces computational intensity",
+    //             "correct": true,
+    //             "feedback": "Correct. Cloud computing reduces computational load by providing scalable resources."
+    //         },
+    //         {
+    //             "answer": "It allows multiple users to modify sequences simultaneously",
+    //             "correct": false,
+    //             "feedback": "Incorrect. Cloud computing primarily aids in computational efficiency rather than simultaneous modification."
+    //         },
+    //         {
+    //             "answer": "It increases the dataset size",
+    //             "correct": false,
+    //             "feedback": "Incorrect. Cloud computing supports large datasets but does not increase their size."
+    //         },
+    //         {
+    //             "answer": "It stores data indefinitely",
+    //             "correct": false,
+    //             "feedback": "Incorrect. Cloud computing offers storage but does not ensure indefinite data retention."
+    //         }
+    //     ]
+    // },
+    // {
+    //     "question": "What kernel requirement should be considered when running USHER for phylogenetic tree reconstruction?",
+    //     "type": "multiple_choice",
+    //     "answers": [
+    //         {
+    //             "answer": "The kernel needs to be set to Python 2",
+    //             "correct": false,
+    //             "feedback": "Incorrect. Python 2 is not a requirement for running USHER."
+    //         },
+    //         {
+    //             "answer": "A dedicated kernel is required due to different dependencies",
+    //             "correct": true,
+    //             "feedback": "Correct. A dedicated kernel is recommended for USHER due to dependency management."
+    //         },
+    //         {
+    //             "answer": "USHER should be installed in the same kernel as other tools",
+    //             "correct": false,
+    //             "feedback": "Incorrect. A separate kernel is often used to avoid dependency conflicts."
+    //         },
+    //         {
+    //             "answer": "The kernel version must be the latest version",
+    //             "correct": false,
+    //             "feedback": "Incorrect. A specific kernel version is not required as long as dependencies are managed."
+    //         }
+    //     ]
+    // },
     {
         "question": "What file format is typically generated for tree visualization using FastTree?",
         "type": "multiple_choice",
