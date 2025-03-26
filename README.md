@@ -1,11 +1,12 @@
-
 ![course-card](images/usd-card.png)
 
 # University of South Dakota: Phylogenetic Analysis
-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+---
 
 ## Contents
-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+---
 
 - <u>[Overview](#overview)</u>
 - <u>[Background](#background)</u>
@@ -36,7 +37,7 @@ The advancement of sequencing technologies has significantly enhanced phylogenet
 
 ![general overall process](images/NOSI-Phylogeny.png)
 
---------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Background
 
@@ -58,28 +59,26 @@ The course consists of 4 learning submodules:
 - [Submodule 3 Alignment and Phylogenetic Reconstruction](#submodule-3-alignment-and-phylogenetic-reconstruction)
 - [Submodule 4 Analyze Phylogenetic Tree](#submodule-4-analyze-phylogenetic-tree)
 
---------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Before Starting
 
 This tutorial is built on the AWS SageMaker platform. The recommended architecture is JupyterLab with an instance type of ml.m5.2xlarge and at least 20GB of storage. Refer to the wiki pages for detailed AWS-specific setup instructions.
 To use our module, clone this repo using `git clone https://github.com/bicbioeng/nosi-phylogeny-draft.git` and then navigate to the directory for this project.
 
-----------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Getting Started
 
 Our learning objectives encompass a comprehensive understanding of phylogenetic analysis, from data collection and
 preparation to tree construction and interpretation, enabling participants to conduct meaningful analysis in diverse metagenomic
-context. 
+context.
 
 <center>
     <img src="images/phylogenetic-workflowdiagram.png" width="600" height="500">
 </center>
 
-
-
- ### Submodule 1: Understanding the Basics of Phylogenetics
+### Submodule 1: Understanding the Basics of Phylogenetics
 
 In this submodule, learners will be introduced to the fundamental concepts of phylogenetic trees, which represent evolutionary relationships among species or organisms. These trees are based on physical traits and genetic data, help generate hypotheses about the evolutionary history of the organisms studied. This submodule sets the foundation for subsequent modules by establishing a clear understanding of how phylogenetic trees are constructed and their significance in evolutionary studies.
 
@@ -154,7 +153,7 @@ By integrating automation and visualization techniques, learners will gain hands
   - **IQ-TREE**: A maximum-likelihood-based phylogenetic tree inference tool for highly accurate evolutionary analysis.
   - **BLAST (Basic Local Alignment Search Tool)**: Used for sequence comparison, identifying homologous sequences, and analyzing evolutionary patterns.
 
--------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Software Requirements
 
@@ -174,44 +173,41 @@ The tool executed via the command will be installed in the container, and each l
 ## Architecture Design
 
 <center>
-    <img src="images/new_Master_Architecture_Diagram.PNG" width="800" height="600">
+    <img src="images/new_Master_Architecture_Diagram.PNGn" width="800" height="600">
 </center>
 
-
-
-----------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Troubleshooting
 
-1. **Missing file:**  This error can have multiple causes:
+1. **Missing file:** This error can have multiple causes:
 
-    - Wrong file path: Find the correct file in notebook directories, then update the correct file path.
+   - Wrong file path: Find the correct file in notebook directories, then update the correct file path.
 
-    - File does not exist: Find the path in the provided bucket or notebook and update the command.
+   - File does not exist: Find the path in the provided bucket or notebook and update the command.
 
-    - File was not generated: Check previous steps and ensure they ran successfully.
+   - File was not generated: Check previous steps and ensure they ran successfully.
 
 2. **ModuleNotFoundError:** No module named 'biopython'.
 
-    - Ensure that the module is installed correctly by running pip install biopython.
+   - Ensure that the module is installed correctly by running pip install biopython.
 
-    - Check the installation path to confirm that the package is installed in the correct environment.
+   - Check the installation path to confirm that the package is installed in the correct environment.
 
 Similarly, verify the installation paths for all required tools.
 
-------------------------------------------------------------------------------------------------------------------
+---
 
-## Data 
+## Data
 
 This training module will use 6 different datasets to cover the diversity of our problem for each of the use cases shown.
 
 - **UC1(Covid Epidemiology): Demo Tutorial**
-  
-  In this tutorial, we are using SARS-CoV-2 datasets, from which we extract genetic sequence data from the NCBI     Virus Database.This dataset includes SARS-CoV-2 genetic sequences and associated metadata, which are essential    for studying virus mutations, variant classification, and epidemiological trends.
-  The data enables phylogenetic analysis to track the virus’s evolution, mutation analysis to study changes in      transmissibility or vaccine resistance, and epidemiological studies to understand how the virus spreads.
 
-  **Source:** The dataset is obtained from the NCBI Virus Database, which provides curated and up-to-date SARS-      CoV-2    sequence data for research purposes.
+  In this tutorial, we are using SARS-CoV-2 datasets, from which we extract genetic sequence data from the NCBI Virus Database.This dataset includes SARS-CoV-2 genetic sequences and associated metadata, which are essential for studying virus mutations, variant classification, and epidemiological trends.
+  The data enables phylogenetic analysis to track the virus’s evolution, mutation analysis to study changes in transmissibility or vaccine resistance, and epidemiological studies to understand how the virus spreads.
 
+  **Source:** The dataset is obtained from the NCBI Virus Database, which provides curated and up-to-date SARS- CoV-2 sequence data for research purposes.
 
 - UC2(Protein Alignment): In development--
 - UC3(Pan-genomics & Core Genome): In development--
@@ -219,13 +215,13 @@ This training module will use 6 different datasets to cover the diversity of our
 - UC5(Ecology (NIF Bacteria)): In development--
 - UC6(Protein - IFA - RNASeq): In development --
 
-----------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Funding
 
 Funded by the South Dakota INBRE Program NIH/NIGMS P20 GM103443.
 
-----------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Licence for Data
 
@@ -245,4 +241,3 @@ All additional text and materials created within this project (excluding NCBI da
 For more details on the Creative Commons license, visit: ![Creative commons license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
