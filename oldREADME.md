@@ -1,23 +1,29 @@
-
 ![course-card](images/usd-card.png)
 
 # University of South Dakota: Phylogenetic Analysis
-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Contents
-----------------------------------------------------------------------------------------------------------------------------------------------------
 
-- <u>[Overview](#overview)</u>
-- <u>[Background](#background)</u>
-- <u>[Before Starting](#before-starting)</u>
-- <u>[Getting Started](#getting-started)</u>
-- <u>[Software Requirements](#software-requirements)</u>
-- <u>[Architecture Design](#architecture-design)</u>
-- <u>[Data](#data)</u>
-- <u>[Funding](#funding)</u>
-- <u>[License for Data](#license-for-data)</u>
+- [Overview](#overview)
+- [Learning Objectives](#learning-objectives)
+- [Getting Started](#getting-started)
+- [Software Requirements](#software-requirements)
+- [Workflow Diagrams](#workflow-diagrams)
+- [Submodule 1 Understanding the Basics of Phylogenetics](#submodule-1-understanding-the-basics-of-phylogenetics)
+- [Submodule 2 Collect and Prepare Sequence Data for Analysis](#submodule-2-collect-and-prepare-sequence-data-for-analysis)
+- [Submodule 3 Alignment and Phylogenetic Reconstruction](#submodule-3-alignment-and-phylogenetic-reconstruction)
+- [Submodule 4 Analyze Phylogenetic Tree](#submodule-4-analyze-phylogenetic-tree)
+- [Data](#data)
+- [Troubleshooting](#troubleshooting)
+- [Funding](#funding)
+- [License for Data](#license-for-data)
 
-## Overview
+### **Setup**
+
+This tutorial is built on the AWS SageMaker platform. The recommended architecture is JupyterLab with an instance type of ml.m5.2xlarge and at least 20GB of storage. Refer to the wiki pages for detailed AWS-specific setup instructions.
+To use our module, clone this repo using `git clone https://github.com/bicbioeng/nosi-phylogeny-draft.git` and then navigate to the directory for this project.
+
+### **Overview**
 
 The study and understanding of phylogenetic trees have become an indispensable part of modern biological research. Phylogenetic trees provide profound insights into the evolutionary relationships between species, genes, or populations. They also help in understanding the spread of diseases, including:
 
@@ -34,11 +40,7 @@ Additionally, phylogenetic trees are used to study functional genomics, such as:
 
 The advancement of sequencing technologies has significantly enhanced phylogenetic analysis, enabling the study of large datasets, including whole genomes. Overall, phylogenetic trees play a crucial role in various biological disciplines, offering valuable insights into evolutionary history and functional genomics.
 
-![general overall process](images/NOSI-Phylogeny.png)
-
---------------------------------------------------------------------------------------------------------------------------------------------------
-
-## Background
+### **Learning Objectives:**
 
 These submodules cover the end-to-end workflow of a standard phylogenetic analysis, starting at extracting a gene sequence to creating a phylogenetic tree to analyzing the tree.
 The phylogenetic analysis modules will serve for undergraduate through graduate level.
@@ -58,28 +60,36 @@ The course consists of 4 learning submodules:
 - [Submodule 3 Alignment and Phylogenetic Reconstruction](#submodule-3-alignment-and-phylogenetic-reconstruction)
 - [Submodule 4 Analyze Phylogenetic Tree](#submodule-4-analyze-phylogenetic-tree)
 
---------------------------------------------------------------------------------------------------------------------------------------------------
+### **Software Requirements**
 
-## Before Starting
+Our Analysis Workflow Toolkits includes the following tools:
 
-This tutorial is built on the AWS SageMaker platform. The recommended architecture is JupyterLab with an instance type of ml.m5.2xlarge and at least 20GB of storage. Refer to the wiki pages for detailed AWS-specific setup instructions.
-To use our module, clone this repo using `git clone https://github.com/bicbioeng/nosi-phylogeny-draft.git` and then navigate to the directory for this project.
+- Jupyter Notebook
+- Nextclade
+- USHER
+- Fasttree
+- IQ-Tree
+- MAFFT
+- iTOL
+- Blast
 
-----------------------------------------------------------------------------------------------------------------------------
+The tool executed via the command will be installed in the container, and each library will be imported at the beginning of each submodule.
 
-## Getting Started
+### **Workflow Diagram**
 
-Our learning objectives encompass a comprehensive understanding of phylogenetic analysis, from data collection and
+### Bioinformatics Workflow Diagrams
+
+![USD workflow](images/phylogenetic-workflowdiagram.png)
+
+Figure 2: Our learning objectives encompass a comprehensive understanding of phylogenetic analysis, from data collection and
 preparation to tree construction and interpretation, enabling participants to conduct meaningful analysis in diverse metagenomic
-context. 
+context
 
-<center>
-    <img src="images/phylogenetic-workflowdiagram.png" width="600" height="500">
-</center>
+### General Overall Process
 
+![general overall process](images/workflow1.png)
 
-
- ### Submodule 1: Understanding the Basics of Phylogenetics
+### Submodule 1: Understanding the Basics of Phylogenetics
 
 In this submodule, learners will be introduced to the fundamental concepts of phylogenetic trees, which represent evolutionary relationships among species or organisms. These trees are based on physical traits and genetic data, help generate hypotheses about the evolutionary history of the organisms studied. This submodule sets the foundation for subsequent modules by establishing a clear understanding of how phylogenetic trees are constructed and their significance in evolutionary studies.
 
@@ -154,95 +164,36 @@ By integrating automation and visualization techniques, learners will gain hands
   - **IQ-TREE**: A maximum-likelihood-based phylogenetic tree inference tool for highly accurate evolutionary analysis.
   - **BLAST (Basic Local Alignment Search Tool)**: Used for sequence comparison, identifying homologous sequences, and analyzing evolutionary patterns.
 
--------------------------------------------------------------------------------------------------------------------------------------------------
-
-## Software Requirements
-
-Our Analysis Workflow Toolkits includes the following tools:
-
-- Jupyter Notebook
-- Nextclade
-- USHER
-- Fasttree
-- IQ-Tree
-- MAFFT
-- iTOL
-- Blast
-
-The tool executed via the command will be installed in the container, and each library will be imported at the beginning of each submodule.
-
-## Architecture Design
-
-<center>
-    <img src="images/new_Master_Architecture_Diagram.PNG" width="800" height="600">
-</center>
-
-
-
-----------------------------------------------------------------------------------------------------------------------------
-
-## Troubleshooting
-
-1. **Missing file:**  This error can have multiple causes:
-
-    - Wrong file path: Find the correct file in notebook directories, then update the correct file path.
-
-    - File does not exist: Find the path in the provided bucket or notebook and update the command.
-
-    - File was not generated: Check previous steps and ensure they ran successfully.
-
-2. **ModuleNotFoundError:** No module named 'biopython'.
-
-    - Ensure that the module is installed correctly by running pip install biopython.
-
-    - Check the installation path to confirm that the package is installed in the correct environment.
-
-Similarly, verify the installation paths for all required tools.
-
-------------------------------------------------------------------------------------------------------------------
-
-## Data 
+### Data
 
 This training module will use 6 different datasets to cover the diversity of our problem for each of the use cases shown.
 
 - **UC1(Covid Epidemiology): Demo Tutorial**
-  
-  In this tutorial, we are using SARS-CoV-2 datasets, from which we extract genetic sequence data from the NCBI     Virus Database.This dataset includes SARS-CoV-2 genetic sequences and associated metadata, which are essential    for studying virus mutations, variant classification, and epidemiological trends.
-  The data enables phylogenetic analysis to track the virus’s evolution, mutation analysis to study changes in      transmissibility or vaccine resistance, and epidemiological studies to understand how the virus spreads.
-
-  **Source:** The dataset is obtained from the NCBI Virus Database, which provides curated and up-to-date SARS-      CoV-2    sequence data for research purposes.
-
-
 - UC2(Protein Alignment): In development--
 - UC3(Pan-genomics & Core Genome): In development--
 - UC4(Cancer):In development --
 - UC5(Ecology (NIF Bacteria)): In development--
 - UC6(Protein - IFA - RNASeq): In development --
 
-----------------------------------------------------------------------------------------------------------------------------
+### Troubleshooting
 
-## Funding
+Common errors encountered in this workflow include:
+
+1. Missing file. This error can have multiple causes:
+   - Wrong file path: Find the correct file in notebook directories, then update the correct file path.
+   - File does not exist: Find path in the provided bucket or notebook and update command.
+   - File was not generated: Check previous steps make sure previous step run successfully.
+
+### Funding
 
 Funded by the South Dakota INBRE Program NIH/NIGMS P20 GM103443.
 
-----------------------------------------------------------------------------------------------------------------------------
+### License for Data
 
-## Licence for Data
+All data and download files in STRING-DB are freely available under a 'Creative Commons BY 4.0' license.
 
-The SARS-CoV-2 sequence data used in this project, including the sequence.fasta file, is sourced from NCBI. This data is publicly available and subject to NCBI’s data usage policies. Users must follow NCBI’s terms of use and properly cite the source when using or redistributing the data.
+Text and materials are licensed under a Creative Commons CC-BY-NC-SA license. The license allows you to copy, remix and redistribute any of our publicly available materials, under the condition that you attribute the work (details in the license) and do not make profits from it. More information is available [here](https://tilburgsciencehub.com/about/#license).
 
-For details, please refer to: [NCBI Data Usage Policies](https://www.ncbi.nlm.nih.gov/home/about/policies/)
-All additional text and materials created within this project (excluding NCBI data) are licensed under a Creative Commons CC-BY-NC-SA 4.0 license. This means you may:
-
-- Copy, remix, and redistribute project-related materials.
-
-- Use the materials with proper attribution.
-
-- Ensure any derivative works are shared under the same license.
-
-- Not use the materials for commercial purposes.
-
-For more details on the Creative Commons license, visit: ![Creative commons license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
+![Creative commons license](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
