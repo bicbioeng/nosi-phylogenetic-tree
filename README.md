@@ -173,7 +173,7 @@ The tool executed via the command will be installed in the container, and each l
 ## Architecture Design
 
 <center>
-    <img src="images/new_Master_Architecture_Diagram.PNGn" width="800" height="600">
+    <img src="images/new_Master_Architecture_Diagram.png">
 </center>
 
 ---
