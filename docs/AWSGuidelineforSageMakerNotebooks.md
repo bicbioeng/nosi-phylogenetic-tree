@@ -8,24 +8,19 @@ Docker uri: 025066287031.dkr.ecr.us-east-1.amazonaws.com/usd-phylogenetic-tree/c
 
 ##### <u>Notices</u>:
      
-REMEMBER INCLUDE THE DOT AT THE END OF COMMAND. If you cannot find the **/home/app** folder, just start again from the beginning to update the new image version. 
-
-Please let me know if you have any questions. 
-![AWS Tester guide1](../images/AWSTesterGuideline1.PNG)
-
-**Step 4:** Choose the Amazon SageMaker AI 
+**Note 1:** Choose the Amazon SageMaker AI 
 
 ![AWS Tester guide2](../images/AWSTesterGuideline2.PNG)
 
-**Step 5:** Choose the N. Virginia Region 
+**Note 2:** Choose the N. Virginia Region 
 
 ![AWS Tester guide3](../images/AWSTesterGuideline3.PNG)
 
-**Step 6:** Choose the jupyter notebook style 
+**Note 3:** Choose the jupyter notebook style 
 
 ![AWS Tester guide4](../images/AWSTesterGuideline4.PNG)
 
-**Step 7:** Use the correct image URI: <u>025066287031.dkr.ecr.us-east-1.amazonaws.com/usd-phylogenetic-tree/custom-aws-tutorial:latest</u> 
+**Note 4:** Use the correct image URI: <u>025066287031.dkr.ecr.us-east-1.amazonaws.com/usd-phylogenetic-tree/custom-aws-tutorial:latest</u> 
 
 ![AWS Tester guide5](../images/AWSTesterGuideline5.PNG)
 
