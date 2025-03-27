@@ -63,8 +63,8 @@ The course consists of 4 learning submodules:
 
 ## Before Starting
 
-This tutorial is built on the AWS SageMaker platform. The recommended architecture is JupyterLab with an instance type of ml.m5.2xlarge and at least 20GB of storage. Refer to the wiki pages for detailed AWS-specific setup instructions.
-To use our module, clone this repo using `git clone https://github.com/bicbioeng/nosi-phylogeny-draft.git` and then navigate to the directory for this project.
+This tutorial is built on the AWS SageMaker platform. The recommended architecture is JupyterLab with an instance type of ml.m5.2xlarge and at least 20GB of storage. Refer to the [AWS SageMaker Notebooks Setup Instruction](docs/AWSGuidelineforSageMakerNotebooks.md) for detailed AWS-specific setup instructions.
+To use our module, clone this repo using `git clone https://github.com/bicbioeng/nosi-phylogeny-tree.git` and then navigate to the directory for this project.
 
 ---
 

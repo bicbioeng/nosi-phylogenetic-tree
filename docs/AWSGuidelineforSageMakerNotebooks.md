@@ -2,14 +2,11 @@
 
 Docker uri: 025066287031.dkr.ecr.us-east-1.amazonaws.com/usd-phylogenetic-tree/custom-aws-tutorial:latest
 
-**Step 2:** Run the tutorial, followed step by step from submodule 1 to submodule 4 notebook.
+**Step 2:** Open the terminal. Then clone the GitHub repo `git clone https://github.com/bicbioeng/nosi-phylogeny-draft.git`
 
-**Step 3:** Fill out the form under your name. 
+**Step 3:** Run the tutorial, followed step by step from submodule 1 to submodule 4 notebook.
 
 ##### <u>Notices</u>:
-if you did not see the Submodule 1 - 4 files. They are in /home/app folder, you can copy all of them to your working folder by
-- Open terminal 
-- cp -r /home/app . 
      
 REMEMBER INCLUDE THE DOT AT THE END OF COMMAND. If you cannot find the **/home/app** folder, just start again from the beginning to update the new image version. 
 
