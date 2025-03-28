@@ -1,4 +1,4 @@
-**Step 1:** Create the SageMaker notebook https://github.com/NIGMS/NIGMSSandbox/blob/main/docs/HowToCreateJupyterlabWithCustomImage.md
+**Step 1:** Create the SageMaker notebook [set up AWS Sagemaker Studio](https://github.com/NIGMS/NIGMS-Sandbox/blob/main/docs/HowToCreateAWSSagemakerNotebooks.md#set-up-sagemaker-studio)
 
 Docker uri: 025066287031.dkr.ecr.us-east-1.amazonaws.com/usd-phylogenetic-tree/custom-aws-tutorial:latest
 
